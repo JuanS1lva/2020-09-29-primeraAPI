@@ -1,13 +1,16 @@
-const API = 'https://rickandmortyapi.com/api/character'
+const randomsPokemons = Math.floor(Math.random() * 30)
+let pokemones
+
+const API = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset='+randomsPokemons;
 
 
 const getData = (api)=>{
   return fetch(api)
     .then( (response) =>response.json())
     .then((json)=>{
-      // console.log('json-->', json);
-      llenarDatos(json),
-      paginacion(json.info)
+      console.log('json-->', json);
+      //llenarDatos(json),
+      //paginacion(json.info)
     })  
     .catch( (error) => {
       console.log('error', error);
