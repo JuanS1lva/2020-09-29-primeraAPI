@@ -8,10 +8,12 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div class="header position-fixed">
+  <div class="header conatiner">
     <header class="bg-warning text-center headerStyle">
       <h1 class="text-info">Pokemones por JuanS1lva</h1>
-      <ul class="pagination" id="paginacion"></ul>
+      <div class="row justify-content-center p-3">
+        <button type="button" onclick="paginacion()" class="btn btn-info pagination p-2" id="paginacion">Randoms Pokemons</button>
+      </div>
     </header>
   </div>
   <!-- persnonajes -->
@@ -20,6 +22,7 @@
 
     </div>
   </div>
+  
 
 
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
